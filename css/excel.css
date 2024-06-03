@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.open-popup {
+  visibility: visible;
+}
+
+body .pop-container {
+  display: flex;
+  justify-content: center;
+}
+body .pop-container .popup {
+  padding: 1.5em 0.5em 1em 0.5em;
+  line-height: 2em;
+  width: 30%;
+  font-family: sans-serif;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgb(225, 220, 220);
+  margin: 2em 0 0 0;
+  height: 30vh;
+  border-radius: 10px;
+  visibility: hidden;
+}
+body .pop-container .ok {
+  width: 50%;
+  background-color: green;
+  color: white;
+  padding: 1em;
+  border: 0;
+  font-size: 1em;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+body .container .header {
+  background-color: white;
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  position: sticky;
+  margin-top: 2rem;
+  padding: 0.8em 1em 0.5em 2em;
+  box-shadow: 3px 3px 3px 3px rgb(243, 241, 241);
+  border-radius: 2em;
+  grid-template-columns: 7fr 5fr;
+}
+body .container .header img {
+  width: 25%;
+}
+body .container .header a {
+  font-size: 1em;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+}
+body .container .first {
+  margin-top: 5rem;
+  padding: 0em 0em 0em 15em;
+}
+body .container .first h1 {
+  color: rgb(131, 147, 235);
+  font-family: sans-serif;
+}
+body .container .first p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: rgba(22, 14, 14, 0.623);
+  margin: 1.2em 0 1.5em 0;
+}
+body .container .first form .form_label {
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+body .container .first form .form_input {
+  width: 26%;
+  border-radius: 0.5em;
+  padding: 1em 1em 1em 1em;
+  border: 2px solid whitesmoke;
+}
+body .container .first form .form_input:hover {
+  outline: 2px solid rgb(173, 95, 173);
+  border: 0;
+  margin: 0;
+}
+body .container .first form .password {
+  padding: 0em 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+body .container .first form button {
+  width: 29%;
+  background-color: rgb(100, 120, 231);
+  border: 0;
+  padding: 1em 1em 1em 1em;
+  color: white;
+  border-radius: 0.5em;
+}
+body .container .first h5 {
+  padding: 2em 0 0 3em;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: rgba(22, 14, 14, 0.623);
+  margin: 1.2em 0 1.5em 0;
+  font-size: 15px;
+}
+body .container .first h5 a {
+  text-decoration: none;
+  color: rgb(100, 120, 231);
+}
+body .container .first h4 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: rgba(22, 14, 14, 0.623);
+  margin: 1.2em 0 1.5em 1em;
+  font-size: 15px;
+}
+body .container .first h4 a {
+  text-decoration: none;
+  color: rgb(100, 120, 231);
+}
+body .container .last {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgba(22, 14, 14, 0.623);
+  padding: 2em 0 0 0;
+}
+
+@media (max-width: 960px) {
+  body .container .header img {
+    width: 70%;
+  }
+  body .container .header a {
+    font-size: 2em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  body .container .first p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgba(22, 14, 14, 0.623);
+    margin: 1.2em 0 1.5em 0;
+    font-size: 2em;
+  }
+  body .container .first form .form_label {
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  body .container .first form .form_input {
+    width: 80%;
+    border-radius: 0.5em;
+    padding: 1em 1em 1em 1em;
+    border: 2px solid whitesmoke;
+    font-size: 2em;
+  }
+  body .container .first h5 {
+    padding: 2em 0 0 1em;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgba(22, 14, 14, 0.623);
+    margin: 1.2em 0 1.5em 0;
+    font-size: 2em;
+  }
+  body .container .first h4 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgba(22, 14, 14, 0.623);
+    margin: 1.2em 0 1.5em 1em;
+    font-size: 1.32em;
+  }
+  body .container .last {
+    text-align: center;
+    font-family: sans-serif;
+    color: rgba(22, 14, 14, 0.623);
+    padding: 2em 0 0 0;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=excel.css.map */

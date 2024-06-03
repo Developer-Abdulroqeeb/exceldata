@@ -1,0 +1,417 @@
+*{
+    box-sizing: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+    body{
+background-color:whitesmoke;
+.container{
+    display: flex;
+    gap: 2em;
+    .left{
+        max-height: calc(100vh - 9rem);
+        overflow-y: auto;
+        position: fixed;
+        margin: 1em 0 0 1em;
+        padding: 1.9em 1em 6em 1.5em;
+        // background-color: white;
+        // border-radius: 1.5em;
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        // box-shadow: 2px 5px 2px 5px rgb(231, 226, 226);
+        a{
+            text-decoration: none;
+        }
+        // position: static;
+        .text{
+            color: #344767;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+    .home,.wallet,.airtime,.e-pin,.data,.coupons,.broad{
+       display: flex;
+       gap: 0.5em;
+       h1{
+        font-family: sans-serif;
+        color:#344767 ;
+        font-weight: lighter;
+        font-size: 14px;
+        padding: 0.5em  0 0 0;
+        
+       }
+    }
+    .cable,.elect,.exam,.betting,.referal,.apis{
+        display: flex; 
+        gap: 0.5em; 
+        h1{
+            font-family: sans-serif;
+            color:#344767 ;
+            font-weight: lighter;
+            font-size: 14px;
+            padding: 0.5em  0 0 0;
+           }
+    }
+    .details,.two,.transact,.reach,.logout,.privacy{
+        display: flex;
+        gap: 0.5em;
+        h1{
+            font-family: sans-serif;
+            color:#344767 ;
+            font-weight: lighter;
+            font-size: 14px;
+            padding: 0.5em  0 0 0;
+           }
+    }
+}
+.right{
+    margin: 2em 0 0 25rem;
+    width: 100%;
+    .dashboard{
+    background-color: white;
+    width: 68%;
+    padding: 1em 1em 1em 1em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #344767;
+        font-size: 16px;
+    }
+    img{
+        display: none;
+    }                              
+   
+}
+.inner_right{
+    display: flex;
+    margin: 5em 0 0 0;
+    gap: 1.5em;
+    width: 97%;
+    .acc_balance,.acct_transact{
+        width: 60%;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 0.8em 1em 0.8em 1em;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color:#344767 ;
+            font-weight: light;
+            span{
+                font-size: 19px;
+            }
+        }
+    }
+}
+.payments{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+    width: 68%;
+    padding: 1.3em 1.3em 1.3em 1.3em;
+    border-radius: 10px;
+    margin: 3em 0 0 0;
+    .first_payment{
+        display: flex;
+      justify-content: space-between;
+      p{
+        font-family: sans-serif;
+        color:#344767;
+        font-weight: bold;
+      }
+      h5{
+        a{
+            text-decoration: none;
+            color:white ;
+        }
+        background-color: #3A416F;
+        color: white;
+        font-family: sans-serif;
+        padding: 1em 1em 1em 1em;
+        border-radius: 5px;
+      }
+    }
+    .second_payment{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1em 0 0 0 ;
+        column-gap: 1.5em;
+        row-gap: 1em;
+        .gtbank,.moniepoint,.sterling,.vfd{
+            display: flex;
+            gap: 1.5em;
+            padding: 1.7em 1.7em 1.7em 1.7em;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            h6{
+                font-family: sans-serif;
+                font-size: 1.2em;
+                color:#344767 ;
+            }
+            img{
+                width:9%;
+            }
+        }
+    }
+    .text{
+        h6{
+            padding: 1em  0 0 0;
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #344767; 
+            font-weight: lighter;    
+           }
+    }
+    
+}
+.notification{
+    margin: 2em 0 0 0;
+    background-color: white;
+    width: 94%;
+    padding: 1em 1em 1.3em 1em;
+    border-radius: 15px;
+    // height: 25vh;
+    box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+    h1{
+        font-family: sans-serif;
+        color:#344767 ;
+        font-weight: lighter;
+    }
+    .PEE{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        p{
+            font-family: sans-serif;
+            color:#344767 ;
+            
+        }
+    }
+
+}
+.last{
+    margin: 2em 0 0 0;
+    display: grid;
+    row-gap: 2em;
+    width: 97%;
+    column-gap: 1.5em;
+    grid-template-columns: repeat(4,1fr);
+    .one_last{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 1.5em 0 1.5em 0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+      h5{
+        padding: 1em 0 0 0;
+        a{
+            color: #344767;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 17px;
+        }
+      }
+      img{
+        width: 25%;
+      }
+ 
+    }
+    .one{
+        background-color: white;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 1.5em 0 1.5em 0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+      h5{
+        padding: 1em 0 0 0;
+        a{
+            color: #344767;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 17px;
+        }
+      }
+        img{
+            width: 25%;
+        }
+    }
+    .support{
+        background-color: white;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 1.5em 0 1.5em 0;
+      border-radius: 10px; 
+      box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+      h5{
+        padding: 1em 0 0 0;
+        a{
+            color: #344767;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 17px;
+        }
+      }
+    }
+}
+}
+}
+}
+@media(max-width:960px) {
+    body .container .right .dashboard {
+        background-color: white;
+        width: 80%;
+        padding: 1em 1em 1em 1em;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+        position: fixed;
+        justify-content: space-between;
+        img{
+            display: block;
+            height: 10%;
+            width: 10%;
+        }
+ 
+    }
+    body .container .left{
+        display: none;  
+        position: fixed;
+        background-color: white;
+        z-index: 99;
+        width: 50%;
+        margin:2em 0 0 1em;
+        text-decoration: none;
+        overflow-y: auto;
+        padding: 1em;
+        max-height:calc(100vh - 9rem) ;
+        border-radius: 20px;
+    }
+    body .container .left.show{
+        display: block;
+    }
+
+    body .container #left .image .img_2{
+        width: 80%;
+    }
+    body .container .right {
+        margin: 0;
+        width: 100%;
+        padding: 1.5em 1em 6em 1em;
+
+    }
+    body .container .right .inner_right {
+        display: flex;
+        margin: 5em 0 0 0;
+        gap: 1.5em;
+        width: 100%;
+        flex-direction: column;
+    }
+    body .container .right .inner_right .acc_balance, body .container .right .inner_right .acct_transact {
+        width: 90%;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 0.8em 1em 0.8em 1em;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+    }
+    body .container .right .payments {
+        background-color: white;
+        box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+        width: 88%;
+        padding: 1.3em 1.3em 1.3em 1.3em;
+        border-radius: 10px;
+        margin: 3em 0 0 0;
+    }
+    body .container .right .payments .second_payment {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1em 0 0 0;
+        -moz-column-gap: 1.5em;
+        column-gap: 1.5em;
+        row-gap: 1em;
+    }
+    body .container .right .notification {
+        margin: 2em 0 0 0;
+        background-color: white;
+        width: 90%;
+        padding: 1em 1em 1.3em 1em;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(231, 226, 226);
+    }
+    body .container .right .last {
+        margin: 2em 0 0 0;
+        display: grid;
+        gap: 2.5em;
+        width: 100%;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .home,.wallet,.airtime,.e-pin,.data,.coupons,.broad{
+        display: flex;
+        gap: 1.5em;
+        margin: 1.2em 0 0 0;
+        h1{
+         font-family: sans-serif;
+         color:#344767 ;
+         font-weight: lighter;
+         font-size: 14px;
+         padding: 0.5em  0 0 0;
+         
+        }
+        
+     }
+     .cable,.elect,.exam,.betting,.referal,.apis{
+         display: flex; 
+         gap: 1.5em;
+         margin: 1.2em 0 0 0;
+         h1{
+             font-family: sans-serif;
+             color:#344767 ;
+             font-weight: lighter;
+             font-size: 14px;
+             padding: 0.5em  0 0 0;
+            }
+           
+     }
+     .details,.two,.transact,.reach,.logout,.privacy{
+        display: flex;
+        gap: 1.5em;
+        margin: 1.3em 0 0 0;
+        h1{
+            font-family: sans-serif;
+            color:#344767 ;
+            font-weight: lighter;
+            font-size: 14px;
+            padding: 0.5em  0 0 0;
+           }
+    }
+}
